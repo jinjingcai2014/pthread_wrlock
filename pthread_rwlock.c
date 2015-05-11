@@ -64,3 +64,10 @@ int  pthread_rwlock_rdlock(pthread_rwlock_t *rw)
 	return (result);
 }
 
+int  pthread_rwlock_trylock(pthread_rwlock_t *rw)
+{
+	int  result;
+	if(rw->rw_magic != RW_MAGIC)
+}
+
+
